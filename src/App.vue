@@ -20,7 +20,7 @@
         },
         methods: {
             newQuote(quote) {
-                this.quotes.push(quote);
+                quote ? this.quotes.push(quote) : null;
             }
         },
         components: {
